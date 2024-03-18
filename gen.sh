@@ -30,4 +30,4 @@ INCLUDEDIR=$(mktemp -d)
 install -Dm755 installer.sh "$INCLUDEDIR"/usr/bin/void-installer
 make
 #./mklive.sh -a 'x86_64' -r "${REPO}" -p "${BASE_PKGS} ${PKGS}" -S "${BASE_SERVICES} ${SERVICES}" -I "${INCLUDEDIR}"
-./build-x86.sh -b awesomewm -a 'x86_64' -r "${REPO}" -p "${BASE_PKGS} ${PKGS}" -S "${BASE_SERVICES} ${SERVICES}" -I "${INCLUDEDIR}"
+./build-x86-images.sh -b awesomewm -a 'x86_64' -r "${REPO}" -p "${BASE_PKGS} ${PKGS}" -S "${BASE_SERVICES} ${SERVICES}" -I "${INCLUDEDIR}"
